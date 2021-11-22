@@ -20,8 +20,8 @@ API: flask
 
 ### Клонируем репозиторий и запускаем контейнер
 ```
-$ git clone https://github.com/fimochka-sudo/GB_docker_flask_example.git
-$ cd HP_predict
+$ git clone https://github.com/pvsrg/iris_predict.git
+$ cd iris_predict
 $ docker-compose up --build 
 ```
 
