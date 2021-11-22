@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Определение вида ириса</title>
+</head>
+<body>
+<h1>Введите размеры цветка</h1>
+<form method="POST" action="" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <p>{{ form.sepal_length.label(size=30)}} : {{ form.sepal_length(size=10) }}</p>
+    <p>{{ form.sepal_width.label(size=30)}} : {{ form.sepal_width(size=10) }}</p>
+    <p>{{ form.petal_length.label(size=30)}} : {{ form.petal_length(size=10) }}</p>
+    <p>{{ form.petal_width.label(size=30)}} : {{ form.petal_width(size=10) }}</p>
+    <input type="submit" value="Определить">
+    <br>
+    <h2>{{form.name}}</h2>
+    <img src="{{form.photo}}" width=400 alt="iris">
+</form>
+
+</body>
+</html>
